@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+  <title>crie seu evento </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <!--aqui vem os inputs e toda a estrutura do fomr,
+      action serve para indicar para onde enviar o formulario-->
+    <form action="" id="my-form">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações pessoais</legend>
+
+          <div class="col-2">
+
+
+          <div class="input-wrapper">
+            <label for="event-name">Nome</label>
+            <input
+            type="text"
+            id="event-name"
+            required
+            minlength="8"/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-lastname">Sobrenome</label>
+            <input
+            type="text"
+            id="event-lastname"
+            required/>
+          </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="event-email">E-mail do administrador<span>(Digite um e-mail valido)</span></label>
+            <input
+            type="text"
+            id="event-email"
+            required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-password">Senha<span>(Minimo de 8 caracteres)</span></label>
+            <input
+            type="password"
+            id="event-password"
+            required
+            minlength="8">
+            </div>
+          
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+
+          <div class="input-wrapper">
+            <label for="event-mentorname">Nome do seu mentor <span>(Apenas o primeiro nome)</span></label>
+            <input
+            type="text"
+            id="event-mentorname"
+            required>
+          </div>
+          
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Seus horarios disponiveis </legend>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+              
+              <h3>primeira mentoria </h3>
+              <label for="event-date" id="event-date">Data</label>
+              <input
+              type="date"
+              id="event-date"
+              required>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end">
+            </div>
+
+          </div>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+
+              <h3>segunda mentoria </h3>
+              <label for="event-date" id="event-date">Data</label>
+              <input
+              type="date"
+              id="event-date"
+              required>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end">
+            </div>
+
+          </div>
+        </div>
+      </fieldset>
+
+      
+    </form>
+
+    <footer>
+      <input
+      class="button"
+      type="submit"
+      form="my-form"
+      value="Salvar evento">
+    </footer>
+
+  </div>
+</body>
+</html>
